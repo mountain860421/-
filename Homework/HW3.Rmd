@@ -1,0 +1,81 @@
+---
+title: "Untitled"
+author: "homework3"
+date: "2018年10月12日"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+score<-59
+if(score>=60){
+ print("及格")
+}else{
+ print("不及格")
+}
+score<-80
+if(score>=60){
+ print("及格")
+}else{
+ print("不及格")
+}
+```
+```{r}
+my_seq <- 1:10
+for (i in my_seq) {
+ if (i %% 2 == 0) {
+ print(paste(i, "是偶數"))
+ } else {
+ print(paste(i, "是奇數"))
+ }
+}
+```
+```{r}
+week <- c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+for (week in week){
+  print(week)
+}
+```
+```{r}
+week <- c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+i <- 1
+while (i < 8){
+ print(week[i])
+ i <- i + 1
+}
+```
+```{r}
+week <- c("Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday")
+for ( week in weekend){
+ if (week == "Monday")
+ if (week == "Tuesday")
+ if (week == "wednesday")
+ if (week == "Thursday")
+ if (week == "Friday"){
+ next
+ } else {
+ print(weekend)
+ }
+}
+```
+
+```{r}
+pi
+ceiling(pi)
+floor(pi)
+round(pi, digits = pi)
+```
+
+```{r}
+today_char <- "Today is:"
+sys_date <- Sys.Date()
+paste(today_char, sys_date)
+```
+```{r}
+num_vector <- c(11:14, NA) 
+sum(num_vector, na.rm = TRUE)
+median(num_vector, na.rm = TRUE)
+```
